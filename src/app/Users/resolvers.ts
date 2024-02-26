@@ -8,8 +8,5 @@ const queries={
     }
 }
 
-const mutations={
 
-}
-
-export const resolvers={queries,mutations};
+export const resolvers={queries};
