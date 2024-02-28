@@ -24,7 +24,7 @@ interface googleUrlResult{
 
 class UserService{
     public static async googleTokenVerification(token:string){
-        const googleToken=token;  
+    const googleToken=token;  
     const googleUrl=new URL("https://oauth2.googleapis.com/tokeninfo");
     googleUrl.searchParams.set('id_token',googleToken);
 
