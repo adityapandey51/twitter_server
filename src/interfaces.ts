@@ -3,6 +3,11 @@ export interface JWTUser {
     email: string;
   }
 
+export interface createTweetPayload{
+  content:string;
+  imageURL?:string
+}
+
 export interface GraphqlContext{
   user?:JWTUser
 }
