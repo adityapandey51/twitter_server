@@ -16,7 +16,17 @@ const queries={
             id
         }}) 
         return user; 
+    },
+    getUserByID:async(parent:any,{id}:{id:string},ctx:GraphqlContext)=>{
+        const user=await Prisma.user.findUnique({
+            where:{
+                id
+            }
+        })
+        return user;
+    
     }
+
 }
 
 const extraResolvers={
